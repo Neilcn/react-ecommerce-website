@@ -26,7 +26,6 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  console.log('Cart Items:', cartItems);
 
   const removeFromCart = (itemId) => {
     setCartItems((cartItems) => cartItems.filter(item => item.id !== itemId));
