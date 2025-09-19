@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+/* Reusable ecommerce button (Tailwind v4: no @apply) */
+.btn-ecom {
+  display: inline-block; /* inline-block */
+  padding: 0.25rem 0.75rem; /* py-1 px-3 */
+  background-color: #ffffff; /* bg-white */
+  color: #000000; /* text-black */
+  border-radius: 0.375rem; /* rounded (6px typical) */
+  font-weight: 600; /* font-semibold */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); /* shadow */
+  cursor: pointer; /* cursor-pointer */
+  transition: background-color 200ms, border-color 200ms, box-shadow 200ms; /* transition-colors duration-200 */
+}
+.btn-ecom:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+  border-color: #d1d5db; /* hover:border-gray-300 */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* hover:shadow-md */
+}
+.btn-ecom:focus {
+  outline: 2px solid #3b82f6; /* focus:ring-2 ring-blue-500 approximation */
+  outline-offset: 2px;
+}
